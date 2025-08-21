@@ -347,7 +347,7 @@ def main():
     parser.add_argument("--swath-width", type=int, default=8)
     parser.add_argument("--n-swaths", type=int, default=2)
     parser.add_argument("--swath-angle", type=float, default=35.0)
-    parser.add_argument("--swath-gap", type=int, default=32)
+    parser.add_argument("--swath-gap", type=int, default=64)
     parser.add_argument("--scattered-frac", type=float, default=0)
     parser.add_argument("--noise-std", type=float, default=0.03)
 
@@ -416,6 +416,7 @@ def main():
 
         # Plot using the function defined earlier
         plot_swaths_and_reconstruction(u_true, v_true, u_obs, v_obs, mask, u_rec, v_rec)
+
     print("Done.")
 
 
